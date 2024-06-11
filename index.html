@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BinusMaya</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <div class="parentContainer">
+    <div class="navbar">
+      <div class="navbarContent">
+        <h3>BINUSMAYA 2.0</h3>
+
+        <div class="bottomBorder"></div>
+        
+        <ul>
+          <li><a href="index.html"><img src="assets/dashboard.png">Dashboard</a><div class="rectangle"></div></li>
+          <li><a href="course.html"><img src="assets/courses.png">Course</a></li>
+          <li><a href="schedule.html"><img src="assets/schedule.png">Schedule</a></li>
+          <li><a href="grades.html"><img src="assets/grades.png">Grades</a></li>
+          <li><a href="announcement.html"><img src="assets/anouncement.png">Announcement</a></li>
+          <li><a href="otherinformation.html"><img src="assets/others.png">Other Information</a></li>
+        </ul> 
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="headerContent">
+        
+        <div class="LMS">
+          <h3>LEARNING MANAGEMENT SYSTEM</h3>
+        </div>
+
+        <div class="right-section">
+          <div class="role">
+            <h3>Student - Undergraduate</h3>
+          </div>
+
+          <div class="notification">
+            <img src="assets/notification.png" alt="notification">
+          </div>
+
+          <div class="profile">
+            <img src="assets/profile.png" id="profileImg">
+            <div id="profileMenu" class="profile-menu">
+              <div class="name-nim">
+                <div class="circle">
+
+                </div>
+                <div class="name-nim-details">
+                  <span class="student-name">Name</span>
+                  <span>2701234567</span>
+                </div>
+              </div>
+              <div class="separator"></div>
+              <div class="menu-list">
+                <span><img src="menu_profile/update.jpg">Update Information</span>
+                <span><img src="menu_profile/change.jpg">Change Password</span>
+                <span><img src="menu_profile/privacy.jpg">Privacy Policy</span>
+                <span><img src="menu_profile/terms.jpg">Terms and Condition</span>
+                <span><img src="menu_profile/help.jpg">Help and Support</span>
+                <span><img src="menu_profile/feedback.jpg">Send Feedback</span>
+              </div>
+              <div class="separator"></div>
+              <div class="logout">
+                <p><img src="menu_profile/logout.jpg"><a href="Account/account.html">Log out</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="top-half">
+        <div class="information">
+          <h3>Information</h3>
+          <div class="information-content">
+            <div class="slide-container">
+
+              <div class="slides">
+                <img src="carousel_img/image1.jpg" class="active">
+                <img src="carousel_img/image2.jpg">
+                <img src="carousel_img/image3.jpg">
+                <img src="carousel_img/image4.jpg">
+                <img src="carousel_img/image5.jpg">
+              </div>
+
+              <div class="buttons">
+                <span class="next">&#10095;</span>
+                <span class="prev">&#10094;</span>
+              </div>
+
+              <div class="dotsContainer">
+                <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                <div class="dot" attr='3' onclick="switchImage(this)"></div>
+                <div class="dot" attr='4' onclick="switchImage(this)"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="upcoming-class">
+          <h3>Upcoming Classes</h3>
+          <div class="upcoming-content">
+            <span class="location">F2F</span>
+            <div class="class-desc">
+              <div class="class-code">
+                <p>LM01 - LEC</p>
+              </div>
+              <div class="profile">
+                <div class="circle"></div>
+              </div>
+              <div class="nama_dosen">
+                <p>RANI PUSPITA, S.Kom., M.Kom.</p>
+              </div>
+              <div class="class-detail">
+                <div class="subject"><p>Human and Computer Interaction</p></div>
+                <div class="subject-code"><p>COMP6800001</p></div>
+                <div class="time_and_class_location"><p>C0511 - ASM || 13:20 - 15:00 GMT+7</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-half">
+        <div class="todolist">
+          <div class="todolist-header">
+            <div class="todolist-text">
+              <div class="upcoming-text" onclick="showCategory('upcoming')">
+                <span class="notif">3</span>
+                <h3>Upcoming</h3>
+              </div>
+              <div class="outdated-text" onclick="showCategory('outdated')">
+                <h3>Outdated</h3>
+              </div>
+            </div>
+            <div class="separator">
+              <div class="separator1"></div>
+              <div class="separator2"></div>
+            </div>
+          </div>
+          
+          <div class="todolist-content">
+            
+            <div class="todolist-item" data-category="upcoming">
+              <div class="todolist-point"></div>
+              <div class="todolist-class">
+                <span class="todolist-subject">Data Structures - Assurance of Learning</span>
+                <span class="todolist-date">12 May 2024</span>
+              </div>
+            </div>
+
+            <div class="todolist-item" data-category="upcoming">
+              <div class="todolist-point"></div>
+              <div class="todolist-class">
+                <span class="todolist-subject">Calculus - Assignment 2</span>
+                <span class="todolist-date">19 May 2024</span>
+              </div>
+            </div>
+
+            <div class="todolist-item" data-category="upcoming">
+              <div class="todolist-point"></div>
+              <div class="todolist-class">
+                <span class="todolist-subject">Human Computer Interaction (LAB) - Assurance of Learning</span>
+                <span class="todolist-date">12 June 2024</span>
+              </div>
+            </div>
+            
+            <div class="todolist-item" data-category="outdated">
+              <div class="todolist-point"></div>
+              <div class="todolist-class">
+                <span class="todolist-subject">Calculus - Assignment 1</span>
+                <span class="todolist-date">15 March 2024</span>
+              </div>
+            </div>
+
+            <div class="todolist-item" data-category="outdated">
+              <div class="todolist-point"></div>
+              <div class="todolist-class">
+                <span class="todolist-subject">Entrepreneurship - Assignment 1</span>
+                <span class="todolist-date">20 April 2024</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
